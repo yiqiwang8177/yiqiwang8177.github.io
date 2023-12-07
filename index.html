@@ -116,7 +116,29 @@
                         <a href="https://github.com/berniewang8177/Official-codebase-for-Decision-Transducer/">[code]</a>
                         <a href="https://www.youtube.com/watch?v=-f3zd_2GWuE">[presentation]</a>
 
-                        <a href="#" id="popup-link">Click here to open pop-up</a>
+                        <a href="#" id="popup-link"> read more </a>
+
+                        <div id="popup-window">
+                            <h1>Pop-up Window</h1>
+                            <p>This is a pop-up window.</p>
+                            <button id="close-button">Close</button>
+                        </div>    
+
+                        <script>
+                            // Get the elements by their ID
+                            var popupLink = document.getElementById("popup-link");
+                            var popupWindow = document.getElementById("popup-window");
+                            var closeButton = document.getElementById("close-button");
+                            // Show the pop-up window when the link is clicked
+                            popupLink.addEventListener("click", function(event) {
+                              event.preventDefault();
+                              popupWindow.style.display = "block";
+                            });
+                            // Hide the pop-up window when the close button is clicked
+                            closeButton.addEventListener("click", function() {
+                              popupWindow.style.display = "none";
+                            });
+                          </script>
 
                         </papertext>
                     </td>
