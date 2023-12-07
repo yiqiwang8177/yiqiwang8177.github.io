@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="images/cmulogo.png">
   
-    <script src=”main.js” defer></script>
+    <!-- <script src=”main.js” defer></script> -->
 
 </head>
 
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                           
-                        <!-- <script>
+                        <script>
                             function showPopup() {
                             document.getElementById('popup').style.display = 'block';
                             }
@@ -139,7 +139,7 @@
                             document.getElementById('popup').style.display = 'none';
                             }
                             
-                        </script> -->
+                        </script>
 
                         
 
@@ -149,6 +149,61 @@
             </table>
         
             <br>
+
+            <table width="800" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                        <div class="image-container">
+                            <img src="images/DTd_concept.png" width="100%">
+                        </div>
+                    </td>
+                    <td style="width:65%; vertical-align:middle">
+                        <papertext>
+                            <papertitle>A trajectory is worth three sentences: multimodal transformer for offline reinforcement learning</papertitle>
+                            <br>
+                        <strong>Yiqi Wang</strong>,
+                        <a href="https://mxu34.github.io/"><author>Mengdi Xu</author></a>,
+                        <a href="https://laixishi.github.io/"><author>Laixi Shi</author></a>,
+                        <a href="https://users.ece.cmu.edu/~yuejiec/"><author>Yuejie Chi</author></a>,
+                       
+                        <br>
+                        Proceedings of the Thirty-Ninth Conference on Uncertainty in Artificial Intelligence, (<strong>UAI</strong>), 2023
+                        <br>
+                        <a href="https://proceedings.mlr.press/v216/wang23d.html">[paper]</a>
+                        <a href="https://github.com/berniewang8177/Official-codebase-for-Decision-Transducer/">[code]</a>
+                        <a href="https://www.youtube.com/watch?v=-f3zd_2GWuE">[presentation]</a>
+                        <div class="read-more-link" onclick="showPopup()">[read more]</div>
+
+                        <div class="popup" id="popup">
+                            <div class="popup-content">
+                            <span class="close-btn" onclick="closePopup()">&times;</span>
+                            <ul>
+                                <li>This paper formulates offline RL via Transformer as a multimodal sequence modeling problem.</li>
+                                <li>Multimodal quantification process is proposed to discover importance of modality in offline RL (shown in the 3x3 table).</li>
+                                <li>Decision Transducer (DTd) is proposed as a multimodal transformer, by hierachically leveraging importance of modality discovered by the quantification process.</li>
+                                <li>DTd is data-efficient (achieves prior arts with 50% gradient steps) and competitive in performance (surpass all transfromer baselines on average across 9 test suits from D4RL)</li>
+                            </ul>
+                            </div>
+                        </div>
+                          
+                        <script>
+                            function showPopup() {
+                            document.getElementById('popup').style.display = 'block';
+                            }
+
+                            function closePopup() {
+                            document.getElementById('popup').style.display = 'none';
+                            }
+                            
+                        </script>
+
+                        
+
+                        </papertext>
+                    </td>
+                </tr>
+            </table>
+            
         </tr>
         </tr>
      </table>      
