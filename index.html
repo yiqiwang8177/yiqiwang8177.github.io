@@ -178,12 +178,12 @@
                             <span class="close-btn2" onclick="closePopup2()">&times;</span>
                             <ul>
                                 <li>We try to explore the following: could we benefit multimodal task (ASR:audio -> text) by unimodal pretraining (LM: text-only)?.</li>
-                                <li>We proposesd a multiway multimodal transformer, in order to instigate the problem above.</li>
+                                <li>We proposesd a multiway multimodal transformer (each transformer blocks has 2 FFNs), in order to instigate the problem above.</li>
                                 <li>After LM pretraining, we add an extra trainable FFN to each transformer block to accomodate the audio modality during the ASR, called audio expert. 
                                     The original FFN inherit from LM pretrianing is called text expert. The self-attn is also inherit from LM pretrianing.
                                 </li>  
-                                <li>We observed that naively feed a new modality to the modal, and adding an extra trainable FFN to each block introduce training instability.</li>
-                                <li>Our hypothesis is tha the gap in modality representation (audio VS. text) introduce this issue. We're now instigating grounding technique to fix thiss issue.</li>
+                                <li>We observed that naively feed a new modality to the unimodal pretrained modal with a newly added trainable FFN to each block introduce training instability.</li>
+                                <li>Our hypothesis is that the gap in modality representation (audio VS. text) introduce this issue. We're now instigating grounding technique to fix thiss issue.</li>
                             </ul>
                             </div>
                         </div>
