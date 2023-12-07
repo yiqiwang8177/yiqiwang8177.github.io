@@ -159,29 +159,31 @@
                     </td>
                     <td style="width:65%; vertical-align:middle">
                         <papertext>
-                            <papertitle>A trajectory is worth three sentences: multimodal transformer for offline reinforcement learning</papertitle>
+                            <papertitle>Automatic Speech Recognition Meetss Language Modeling (ASR meets LM)</papertitle>
                             <br>
                         <strong>Yiqi Wang</strong>,
-                        <a href="https://mxu34.github.io/"><author>Mengdi Xu</author></a>,
-                        <a href="https://laixishi.github.io/"><author>Laixi Shi</author></a>,
-                        <a href="https://users.ece.cmu.edu/~yuejiec/"><author>Yuejie Chi</author></a>,
+                        <a><author>Jianyu Mao</author></a>,
+                        <a ><author>Aditya Rathod</author></a>,
                        
                         <br>
-                        Proceedings of the Thirty-Ninth Conference on Uncertainty in Artificial Intelligence, (<strong>UAI</strong>), 2023
+                        In progresss
                         <br>
-                        <a href="https://proceedings.mlr.press/v216/wang23d.html">[paper]</a>
-                        <a href="https://github.com/berniewang8177/Official-codebase-for-Decision-Transducer/">[code]</a>
-                        <a href="https://www.youtube.com/watch?v=-f3zd_2GWuE">[presentation]</a>
+
+                        <a href="https://github.com/berniewang8177/speechbrain/tree/develop/recipes/LibriSpeech/ASR_LM_Cotrain/">[code]</a>
+
                         <div class="read-more-link" onclick="showPopup()">[read more]</div>
 
                         <div class="popup" id="popup">
                             <div class="popup-content">
                             <span class="close-btn" onclick="closePopup()">&times;</span>
                             <ul>
-                                <li>This paper formulates offline RL via Transformer as a multimodal sequence modeling problem.</li>
-                                <li>Multimodal quantification process is proposed to discover importance of modality in offline RL (shown in the 3x3 table).</li>
-                                <li>Decision Transducer (DTd) is proposed as a multimodal transformer, by hierachically leveraging importance of modality discovered by the quantification process.</li>
-                                <li>DTd is data-efficient (achieves prior arts with 50% gradient steps) and competitive in performance (surpass all transfromer baselines on average across 9 test suits from D4RL)</li>
+                                <li>We try to explore the following: could we benefit multimodal task (ASR:audio -> text) by unimodal pretraining (LM: text-only)?.</li>
+                                <li>We proposesd a multiway multimodal transformer, in order to instigate the problem above.</li>
+                                <li>After LM pretraining, we add an extra trainable FFN to each transformer block to accomodate the audio modality during the ASR, called audio expert. 
+                                    The original FFN inherit from LM pretrianing is called text expert. The self-attn is also inherit from LM pretrianing.
+                                </li>  
+                                <li>We observed that naively feed a new modality to the modal, and adding an extra trainable FFN to each block introduce training instability.</li>
+                                <li>Our hypothesis is tha the gap in modality representation (audio VS. text) introduce this issue. We're now instigating grounding technique to fix thiss issue.</li>
                             </ul>
                             </div>
                         </div>
@@ -203,7 +205,7 @@
                     </td>
                 </tr>
             </table>
-            
+
         </tr>
         </tr>
      </table>      
