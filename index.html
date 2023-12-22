@@ -199,7 +199,64 @@
                             
                         </script>
 
-                        
+                        </papertext>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table width="800" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                        <div class="image-container">
+                            <img src="images/Text-cond_Video-Video.png" width="100%">
+                        </div>
+                    </td>
+                    <td style="width:65%; vertical-align:middle">
+                        <papertext>
+                            <papertitle>Scalable Robot Skill Acquisition from Human Activity Data</papertitle>
+                            <br>
+                        <strong>Yiqi Wang</strong>,
+                        <a><author>Mrinal Verghese</author></a>,
+                        <!-- <a ><author>Chris Atkeson</author></a>, -->
+                       
+                        <br>
+                        In progresss
+                        <br>
+
+                        <!-- <a href="https://github.com/berniewang8177/speechbrain/tree/develop/recipes/LibriSpeech/ASR_LM_Cotrain/">[code]</a> -->
+
+                        <div class="read-more-link" onclick="showPopup2()">[read more]</div>
+
+                        <div class="popup" id="popup2">
+                            <div class="popup-content2">
+                            <span class="close-btn2" onclick="closePopup2()">&times;</span>
+                            <ul>
+                                <li>Could we benefit robot skill acquisition by transferring skill demonstrated by humans on Internet via VLMs?.</li>
+                                <li>I observed that VLMs (text-video model) is insufficient to distinguish nuances in text descriptions. Thus, insufficient to supervise robot skill learning.</li>
+                                <ul>
+                                    <li>Black tea</li>
+                                    <li>Green tea</li>
+                                    </ul>
+                                <!-- <li>After LM pretraining, we add an extra trainable FFN to each transformer block to accomodate the audio modality during the ASR, called audio expert. 
+                                    The original FFN inherit from LM pretrianing is called text expert. The self-attn is also inherit from LM pretrianing.
+                                </li>  
+                                <li>We observed that naively feed a new modality to the unimodal pretrained modal with a newly added trainable FFN to each block introduce training instability.</li>
+                                <li>Our hypothesis is that the gap in modality representation (audio VS. text) introduce this issue. We're now instigating grounding technique to fix thiss issue.</li> -->
+                            </ul>
+                            </div>
+                        </div>
+                          
+                        <script>
+                            function showPopup2() {
+                            document.getElementById('popup2').style.display = 'block';
+                            }
+
+                            function closePopup2() {
+                            document.getElementById('popup2').style.display = 'none';
+                            }
+                            
+                        </script>
 
                         </papertext>
                     </td>
