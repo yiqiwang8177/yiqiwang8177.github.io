@@ -123,13 +123,13 @@
                             <div class="popup-content2">
                             <span class="close-btn2" onclick="closePopup2()">&times;</span>
                             <ul>
-                                <li>Dynamic resource allocations can be formulated as a sequential decision-making problem, where a RL policy can learn to tune resources (e.g., cpu frequency) via trial-and-error.</li>
-                                <li>To enable a RL policy to generalize to unseen environments (traffics), one key insight is that: any unseen traffic can be decomposed into short traffics with similar patterns.(</li>
-                                <li>We proposesd RL-ADR, which a RL policy is asked to solve many synthetic short-horizon traffics regarding some curriculum during training. After exposing some a wide ranges of short traffics
-                                    varying in patterns, an unseen traffic at test time becomes a composition of short traffics seen during training. 
+                                <li> By formulating dynamic resource allocations as a sequential decision-making problem, a RL policy learns to tune resources (e.g., cpu frequency) via trial-and-error.</li>
+                                <li>To enable a RL policy to generalize to unseen environments (traffics), one key insight is that: any unseen traffic can be decomposed into short traffics similar in patterns.(</li>
+                                <li>We proposesd RL-ADR: a RL policy is asked to solve many synthetic short-horizon traffics regarding some curriculum during training. After being exposed to a wide ranges of short traffics
+                                    different in patterns, an unseen traffic at test time becomes a composition of short traffics seen during training. 
                                 <li>We also propsoed a novel neural architecturer (DQN-FiLM) to more effectively models the system states, resulted in more sample-efficient learning.</li>
-                                <li>After pretraining, a policy could meet all performance requirements in unseen environments without any fine-tuning.</li>
-                            </ul>
+                                <li>After pretraining, a policy could meet all performance requirements in unseen long-horizon environments without any fine-tuning.</li>
+                            </ul>  
                             </div>
                         </div>
                           
