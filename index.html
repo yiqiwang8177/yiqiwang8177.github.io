@@ -123,7 +123,7 @@
                             <span class="close-btn2" onclick="closePopup2()">&times;</span>
                             <ul>
                                 <li> This project uses World Modle (WM) pretrained on different embodiments to enable sample-efficient robot learning.</li>
-                                <li> Since WM doesn't predict actions (i.e., embodiment-specific details), it becmoes less dependent on embodiments and 
+                                <li> Since WM models dynamics instead of predicting actions, it becomes less dependent on embodiments and 
                                     suitable for leveraging robot data across embodiments. 
                                 <li>We pretrains a WM with optic flows as actions, which removes embodiment-specific details. It can be finetuned on a small amount of robot data (e.g., 30 or 50 demonstrations)</li>
                                 <li>We proposes Latent Policy Steering (LPS) use a WM to improve a policy by searching in the WM's latent state spaces.</li>
