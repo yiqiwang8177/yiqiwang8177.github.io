@@ -101,6 +101,58 @@
                 <tr>
                     <td style="width:35%; vertical-align:middle; padding-right: 20px;">
                         <div class="image-container">
+                            <img src="images/Motivate1_new.png" width="100%">
+                        </div>
+                    </td>
+                    <td style="width:65%; vertical-align:middle">
+                        <papertext>
+                            <papertitle>Latent Policy Steering with Embodiment-Agnostic Pretrained World Models </papertitle>
+                            <br>
+                        <strong>Yiqi Wang</strong>,
+                        <a href="http://mrinal.verghese.org//"><author>Mrinal Verghese</author></a>,
+                        <a href="https://www.cs.cmu.edu/~schneide/"><author>Jeff Schneider</author></a>,
+
+                        <br>
+                        <strong>Under Review</strong>, 2025
+                        <br>
+                        <a href="data/PolicySteerWithWM_CMU_.pdf">[paper]</a>
+                        <div class="read-more-link" onclick="showPopup2()">[read more]</div>
+
+                        <div class="popup" id="popup2">
+                            <div class="popup-content2">
+                            <span class="close-btn2" onclick="closePopup2()">&times;</span>
+                            <ul>
+                                <li> This project uses World Modle (WM) pretrained on different embodiments to enable sample-efficient robot learning.</li>
+                                <li> Since WM doesn't predict actions (i.e., embodiment-specific details), it becmoes less dependent on embodiments and 
+                                    suitable for leveraging robot data across embodiments. 
+                                <li>We pretrains a WM with optic flows as actions, which removes embodiment-specific details. It can be finetuned on a small amount of robot data (e.g., 30 or 50 demonstrations)</li>
+                                <li>We proposes Latent Policy Steering (LPS) use a WM to improve a policy by searching in the WM's latent state spaces.</li>
+                            </ul>  
+                            </div>
+                        </div>
+                          
+                        <script>
+                            function showPopup2() {
+                            document.getElementById('popup2').style.display = 'block';
+                            }
+
+                            function closePopup2() {
+                            document.getElementById('popup2').style.display = 'none';
+                            }
+                            
+                        </script>
+
+                        </papertext>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <table width="800" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                        <div class="image-container">
                             <img src="images/RLsys.png" width="100%">
                         </div>
                     </td>
